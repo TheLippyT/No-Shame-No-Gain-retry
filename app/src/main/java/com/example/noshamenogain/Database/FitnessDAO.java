@@ -17,6 +17,7 @@ public class FitnessDAO extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "fitness.db";
     private static final int DATABASE_VERSION = 1;
 
+    //Database objects for the Users table
     public static final String ID = "id";
     public static final String USERS_TABLE = "users";
     public static final String USERS_USERNAME = "username";
