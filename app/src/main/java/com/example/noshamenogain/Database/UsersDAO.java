@@ -11,7 +11,7 @@ import androidx.annotation.Nullable;
 
 import com.example.noshamenogain.Entity.Users;
 
-public class FitnessDAO extends SQLiteOpenHelper {
+public class UsersDAO extends SQLiteOpenHelper {
     //made into a constant to avoid rewriting them. to avoid types.
 
     private static final String DATABASE_NAME = "fitness.db";
@@ -29,7 +29,7 @@ public class FitnessDAO extends SQLiteOpenHelper {
     private static final String SQL_USERS_TABLE_QUERY = "CREATE TABLE users(id INTEGER PRIMARY KEY, username STRING NOT NULL UNIQUE, password STRING NOT NULL, weight DOUBLE, height DOUBLE, bmi DOUBLE)";
 
 
-    public FitnessDAO(Context context) {
+    public UsersDAO(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
